@@ -29,6 +29,11 @@ Run: python telegram_pet_shop_bot.py
 """
 # -*- coding: utf-8 -*-
 
+import logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s')
+logger = logging.getLogger(__name__)
+
+
 import os
 import logging
 import asyncio
